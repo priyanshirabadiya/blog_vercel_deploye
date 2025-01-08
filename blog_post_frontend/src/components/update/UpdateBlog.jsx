@@ -4,6 +4,7 @@ import { useParams, useLocation, useNavigate } from 'react-router-dom';
 import { DataContext } from '../../context/Dataprovider';
 import { getAccessToken } from '../../constant/utils/comman-utils';
 import { categoriesdata } from '../../constant/data';
+import defaultimg from '../../Assets/blog-4.jpg';
 const BASE_URL = process.env.REACT_APP_API_URL;
 
 const UpdatePost = () => {
@@ -85,8 +86,7 @@ const UpdatePost = () => {
         }
     };
 
-    const url = 'https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500';
-
+    const url = defaultimg;
     return (
         <>
             <div className='mb-[50rem]'>
