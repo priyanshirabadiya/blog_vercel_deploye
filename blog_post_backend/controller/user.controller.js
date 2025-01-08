@@ -7,7 +7,7 @@ const messages = require('../helpers/messages');
 
 exports.getAll = async (req, res) => {
     try {
-        const allusers = await User.find({ isDelete: false });
+        const allusers = await User.find({ isDelete: false }).limit(3);
         res.send(allusers);
     } catch (error) {
         console.log(error);
