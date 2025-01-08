@@ -29,7 +29,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 // app.use(cors());
 app.use(cors({
-    origin: process.env.FROTNEND_URL,
+    origin: process.env.FROTNEND_URL || 'http://localhost:3000',
     methods: 'GET,POST,PUT,DELETE',
     allowedHeaders: 'Content-Type,Authorization',
     credentials: true,
