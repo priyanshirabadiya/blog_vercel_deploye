@@ -1,0 +1,21 @@
+cd Blogpost_Project/blog_post_backend
+
+pm2 status
+
+cd ~/Blogpost_Project
+
+git pull origin Master
+
+cd ~/Blogpost_Project/blog_post_backend
+
+npm install
+
+pm2 start app.js --name blog_post_backend
+
+pm2 status
+
+pm2 start app.js --name blog_post_backend
+
+pm2 status
+
+pm2 logs blog_post_backend

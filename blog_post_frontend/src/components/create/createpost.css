@@ -1,0 +1,128 @@
+.img_width img {
+  height: 500px;
+  width: 800px;
+  border-radius: 20px;
+}
+
+.inp_title input[type="text"] {
+  width: calc(500px - 3vw);
+  border-bottom: 1px solid gray;
+}
+
+.inp_title input[type="text"]::placeholder {
+  font-weight: bold;
+  font-size: large;
+  color: #a48dd2;
+}
+
+.inp_title textarea::placeholder {
+  font-weight: bold;
+  font-size: large;
+  color: #a48dd2;
+}
+
+.published_btn button {
+  background-color: #1f2937;
+}
+
+option {
+  height: 50px !important;
+  width: 200px !important;
+  padding: 50px !important;
+  border-bottom: 2px !important;
+  background-color: rgb(219, 219, 219) !important;
+}
+
+option,
+select:focus {
+  outline: none;
+}
+
+.tj-btn-primary_post {
+  /* text-decoration: none; */
+  display: inline-flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: bold;
+  color: white;
+  text-transform: capitalize;
+  background-size: 200%;
+  background-image: linear-gradient(to right,
+      #8750f7 0%,
+      #2a1454 51%,
+      #8750f7 100%);
+  border: none;
+  border-radius: 50px;
+  padding: 17px 35px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+
+  &.style-7 {
+    padding: 19px 35px;
+  }
+}
+
+/* responsive */
+
+@media (max-width: 1365px) {
+  .img_width img {
+    height: 400px;
+    width: 700px;
+    border-radius: 20px;
+  }
+
+  .inp_title input[type="text"] {
+    width: calc(420px - 3vw);
+    border-bottom: 1px solid gray;
+  }
+
+  .txt-res {
+    width: 790px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img_width img {
+    height: 250px;
+    width: 500px;
+    border-radius: 20px;
+  }
+
+  .inp_title input[type="text"] {
+    width: calc(320px - 3vw);
+    border-bottom: 1px solid gray;
+  }
+
+  .txt-res {
+    width: 450px !important;
+  }
+}
+
+@media (max-width: 482px) {
+  .img_width img {
+    height: 230px !important;
+    width: 280px !important;
+    border-radius: 20px;
+  }
+
+  .inp_title input[type="text"] {
+    width: calc(180px - 0vw);
+    border-bottom: 1px solid gray;
+  }
+
+  .txt-res {
+    margin-top: 10px;
+    width: 300px !important;
+    height: 120px !important;
+  }
+}
+
+@media (max-width:362px) {
+  .wid_ma {
+    width: 350px;
+    padding: 10px 17px 10px 17px;
+  }
+}

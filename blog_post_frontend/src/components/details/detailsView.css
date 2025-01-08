@@ -1,0 +1,17 @@
+.comm_txt input[type="text"] {
+    border-bottom: 1px solid gray;
+    width: calc(10rem + 25vw);
+    background-color: #F6F3FC;
+}
+
+.all_comments {
+    width: calc(26rem + 25vw);
+    border-radius: 5px;
+    background-color: rgb(238, 238, 238);
+}
+
+@media (max-width:365px) {
+    .all_comments {
+        width: 300px;
+    }
+}

@@ -1,0 +1,81 @@
+.main_parent {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.login_page {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.forgotPass {
+  color: #979faf;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  position: relative;
+}
+.bx_shadow {
+  box-shadow: rgba(228, 8, 8, 0.05) 0px 6px 24px 0px,
+    rgba(226, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border-bottom: 1px solid gray;
+}
+
+.error_line {
+  border: 1px solid red;
+}
+
+.error_message {
+  color: #ff0000;
+  font-size: 12px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+.error_message-pass {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"]::placeholder {
+  font-size: 15px !important;
+}
+
+@media (max-width: 365px) {
+  .size_mo {
+    font-size: 15px;
+  }
+  .size_img {
+    height: 50px;
+  }
+  .size_input {
+    max-width: 290px;
+    width: 100%;
+  }
+  .size_input::placeholder {
+    font-size: 15px;
+  }
+  .size_padding {
+    padding: 20px 20px;
+  }
+  .size_wid {
+    width: 300px;
+  }
+  .size_wid-btn {
+    width: 260px;
+  }
+  .size_me {
+    margin-right: 10px;
+  }
+}
