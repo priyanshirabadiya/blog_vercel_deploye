@@ -59,7 +59,7 @@ const Toprated = () => {
                                         </p>
                                     </div>
                                     <div className='ms-5 w-[210px] res-width bld mt-1 text-wrap'>
-                                        {addElipsis(post.title, 50)}
+                                        {addElipsis(post.title, 45)}
                                     </div>
                                 </div>
                             </div>
